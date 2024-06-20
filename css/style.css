@@ -325,4 +325,66 @@ a {
     margin-bottom: 5px;
 }
 
+/****** activité à marseille ***********/
 
+.activite {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+}
+.activite-title {
+    margin-top: 70px;
+}
+.activite-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.activite-card .card{
+    width: 297.5px;
+    height: 439px;
+    border-radius: 20px 20px 20px 20px;
+
+}
+.activite-card .card img{
+    width: 297.5px;
+    height: 380px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+/****** footer******/ 
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--main-bg-color);
+    margin-bottom: 0px;
+
+}
+.footer-content{
+    width: 446.67px;
+    height: 163px;
+}
+
+.footer-content h2{
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.83px;
+}
+
+.footer-list li{
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18.78px;
+    text-align: left;
+
+}
+.footer-list{
+    list-style-type: none;
+    padding-left: 20px;
+    padding-top: 0px;
+}
