@@ -234,48 +234,71 @@ a {
     font-weight: 700;
     line-height: 25.83px;
     text-align: left;
-
-
 }
 .hebergements-title {
-    margin-bottom: 33px;
-    margin-top: 2px;
-}
-
-.herbergement_card {
-    display: grid;
+    display: flex;
     justify-content: space-between;
-    grid-template-columns: 250.33px 250.33px 250.33px;
-
+    align-items: center;
 }
 
-.herbergement_card .card {
-    width: 250.33px;
-    height: 207.25px;
-    padding : 5px 5px 5px 5px;
-    border-radius: 20px 20px 20px 20px;
-    margin-bottom: 20px;
-    
+.hebergement_card {
+    display: flex;
+    flex-direction: column;
+
+
+}
+.hebergement_card_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30%;
 }
 
-.herbergement_card  .card img {
-    width: 250.33px;
+.hebergement_card_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hebergement_card_2 .card-content{
+    width: 30%;
+    display: flex;
+}
+
+.hebergement_card_1 img {
+    width: 100%;
     height: 124px;
     border-radius: 20px 20px 0px 0px;
     border: 5px;
 
 }
 
-.herbergement_card  .card_text h3 {
+.hebergement_card_2 img {
+    width: 100%;
+    height: 124px;
+    border-radius: 20px 20px 0px 0px;
+    border: 5px;
+
+}
+
+.hebergement_card_2 .card_text h3 {
     margin-bottom: 4px;
     margin-top: 0px;
 }
 
-.herbergement_card .card_text p {
+.hebergement_card_2 .card_text p {
     margin : 1px;
 }
 
-.herbergement_card .card-rating {
+.hebergement_card_1 .card_text h3 {
+    margin-bottom: 4px;
+    margin-top: 0px;
+}
+
+.hebergement_card_1 .card_text p {
+    margin : 1px;
+}
+.hebergement_card_1 .card-rating {
     margin-bottom: 5px;
     margin-top: 2px;
 }
