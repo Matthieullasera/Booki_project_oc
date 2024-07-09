@@ -70,6 +70,10 @@ a {
     height: 19px;
 }
 
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
 .nav_text_hebergement, .nav_text_activites {
     display: inline-block;
     position: relative;
@@ -84,8 +88,6 @@ a {
 .nav_text_hebergement::before, .nav_text_activites::before {
     content: '';
     position: absolute;
-    left: 0;
-    right: 0;
     bottom: 100%; 
     border-top: 2px solid var(--main-color);
     color: var(--main-color); 
@@ -494,37 +496,57 @@ a {
         justify-content: center;
         width: 100%;
         justify-content: space-between;
+
     }
 
-    .nav_text_hebergement {
-        padding: 10px;
-        margin: 0px;
+    .nav_hebergement {
         border-bottom: 2px solid var(--main-bg-color);
+        width: 100%;
+    }
+
+    .nav_activites {
+        border-bottom: 2px solid var(--main-bg-color);
+        width: 100%;
+    }
+    .nav_text_hebergement {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-right: 0px;
     }
 
     .nav_text_activites {
-        padding: 10px;
-        margin-right: 30px;
-        border-bottom: 2px solid var(--main-bg-color);
+        margin-left: 50px;
     }
-    
+    .nav_hebergement:hover,
+    .nav_activites:hover {
+
+        border-bottom: 2px solid var(--main-color);
+    }
+
     .nav_text_hebergement::before, .nav_text_activites::before {
-        content: '';
-        position:absolute;
-        bottom: 0%; 
-        color: var(--main-color);  
+        border-top: 0px;
     }
     
     .nav_text_hebergement:hover, .nav_text_activites:hover {
         color: var(--main-color); 
-        border-bottom: 2px;
+        border-bottom: 0px; 
     }
-    
+     
     .nav_text_hebergement:hover::before, .nav_text_activites:hover::before {
         visibility: visible; 
         width: 100%; 
     }
-    
+
+    .nav_hebergement:hover {
+        color: var(--main-color);
+    }
+
+    .nav_hebergement:hover::before{
+        visibility: visible;
+        width: 100%;
+    }
+
+
     .title {
         text-align: left;
     }
@@ -551,6 +573,7 @@ a {
 
     .search_bar input {
         text-align: center;
+        margin-right: 40px;
         border-right: #ffffff;
         width: 80%;
     }
@@ -565,6 +588,8 @@ a {
 
     .search_bar button {
         border-radius: 15px 15px 15px 15px;
+        position: absolute;
+        right: 20px;
 
     }
     .mobile_search {
@@ -633,11 +658,17 @@ a {
         padding: 10px;
         margin-top: 10px;
         border-radius: 0px;
+        margin-bottom: 30px;
     }
 
     .populaires h2 {
-        margin-top: 20px;
+        margin-top: 15px;
+
     }
+    .populaires i {
+        margin-top: 15px;
+    }
+    
     .populaires-cards	{
         flex-direction: column;
         width: 100%;
@@ -712,7 +743,7 @@ a {
     }
     .footer-content{
         width: 100%;
-        height: 163px;
+        height: auto;
     }
 
     .footer-content h2{
@@ -720,10 +751,10 @@ a {
         font-size: 18px;
         font-weight: 700;
         line-height: 25.83px;
+        margin-top: 20px;
     }
 
     .footer-list li{
-        margin-bottom: 15px;
         font-size: 16px;
         font-weight: 400;
         line-height: 18.78px;
