@@ -20,7 +20,6 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
 }
@@ -129,7 +128,7 @@ a {
     display: flex;
     justify-content :center;
     align-items: center;
-    width: 7%; 
+    width: 49px; 
     height: 49px; 
     border : 1px;
     border-radius:15px 0px 0px 15px; 
@@ -149,7 +148,7 @@ a {
 }
 
 .search_bar button {
-    width: 15%; 
+    width: 120px; 
     height: 49px; 
     background-color: var(--main-color);
     font-size: 18px ;
@@ -432,7 +431,16 @@ a {
         width: 100%;
         order: 1;
     }
-
+    .filters_sections {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 10px; 
+    }
+    .filter_button {
+        margin-left: 0px;
+        margin-right: 17px;;
+    }
     .populaires {
         width: 100%;
         margin-top: 50px;
@@ -502,20 +510,19 @@ a {
     .nav_hebergement {
         border-bottom: 2px solid var(--main-bg-color);
         width: 100%;
+        text-align: center;
     }
 
     .nav_activites {
         border-bottom: 2px solid var(--main-bg-color);
         width: 100%;
+        text-align: center;
     }
-    .nav_text_hebergement {
-        margin-left: 10px;
-        margin-bottom: 5px;
-        margin-right: 0px;
+    .nav_text_hebergement{
+        margin: 0px;
     }
-
     .nav_text_activites {
-        margin-left: 50px;
+        margin-bottom:10px ;
     }
     .nav_hebergement:hover,
     .nav_activites:hover {
@@ -579,7 +586,7 @@ a {
     }
 
     .search_bar i {
-        width: 15%;
+        width: 49px;
 
     }
     .desktop_search{
@@ -589,19 +596,24 @@ a {
     .search_bar button {
         border-radius: 15px 15px 15px 15px;
         position: absolute;
-        right: 20px;
+        right: 30px;
+        width: 49px;
+        height: 49px;
+
 
     }
     .mobile_search {
         display: flex;
         align-items: center;
         justify-content: center;
+        padding: 0px;
         
     }
 
     .mobile_search i {
         background-color: #0065FC;
         color: #ffffff;
+        border-radius: 15px 15px 15px 15px;
         
     }
     .filters_sections {
@@ -676,7 +688,6 @@ a {
 
     .populaires-cards a {
         width: 100%;
-        max-width: 335px;
     }
 
     /***** Hébergements ****/ 
@@ -702,7 +713,6 @@ a {
 
     .hebergements_cards a {
         width: 100%;
-        max-width: 335px;
     }
     .hebergement_card .card {
         padding: 5px;
@@ -721,9 +731,7 @@ a {
 
     .activite-card .card {
         width: 100%;
-        max-width: 315px;
         height: 100%;
-        max-height: 207px;
         margin-bottom: 15px;
     }
 
